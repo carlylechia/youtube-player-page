@@ -130,3 +130,98 @@ body{
     height: 100%;
     object-fit: cover;
 }
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    padding: 100px 30px 18px;
+}
+.thumbnail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.thumb-wrapper {
+    padding-top: 100px;
+}
+.thumb {
+    height: 100px;
+    width: fit-content;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.details p {
+    padding-top: 5px;
+    font-size: 0.8rem;
+    color: grey;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+.details h3 {
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+.vid-bottom {
+    font-weight: 50;
+    line-height: 2;
+    font-style: oblique;
+}
+.vid-bottom p {
+    color: grey;
+    font-size: 0.9rem;
+}
+.engagements {
+    display: flex;
+    align-content: space-between;
+    position: absolute;
+    padding-top: 10;
+    padding-left: 37%;
+    cursor: pointer;
+    padding-top: 730px;
+}
+.engagements h4 {
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    /*width: 120px;*/
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
